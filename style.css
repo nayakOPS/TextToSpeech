@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(220,47,2);
+    background: linear-gradient(90deg, rgba(220,47,2,1) 0%, rgba(232,93,4,1) 14%, rgba(244,140,6,1) 48%, rgba(235,104,4,1) 89%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(253, 245, 234);
+}
+.container h1{
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: -50px;
+    margin-bottom: 50px;
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+}
+.container h1 span{
+    color: black;
+    text-shadow: 3px 3px 3px rgba(255,255,255,0.61);
+}
+textarea{
+    width: 700px;
+    height: 350px;
+    background-color:#ffa928;
+    color: #000000;
+    font-size: 25px;
+    border: 0;
+    outline: 0;
+    padding: 20px;
+    border-radius: 10px;
+    resize: none;
+    margin-bottom: 30px;
+    box-shadow: 22px 19px 68px 2px rgba(255,255,255,0.41);
+    -webkit-box-shadow: 22px 19px 68px 2px rgba(255,255,255,0.41);
+    -moz-box-shadow: 22px 19px 68px 2px rgba(255,255,255,0.41);
+}
+textarea::placeholder{
+    font-size: 16px;
+    color: #000000;
+}
+.row{
+    width: 600px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+button{
+    background:#FAA307;
+    color: #000;
+    font-size: 26px;
+    padding: 10px 30px;
+    border-radius: 35px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+/* button{
+    transition: all 2000ms ease;
+} */
+button img{
+    width: 16px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+select{
+    flex: 1;
+    color: #000;
+    background: #FAA307;
+    height: 50px;
+    padding: 0 20px;
+    outline: 0;
+    border: 0;
+    border-radius: 35px;
+    appearance: none;
+    background-image: url('images/dropdown.png');
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position-x: calc(100% - 25px); /* 15px (original) + 10px (shifted to the left) */
+    background-position-y: center;
+    /* background-position-y: center;
+    background-position-x: right;
+} */
+select img{
+    margin-left: 20px
+}
